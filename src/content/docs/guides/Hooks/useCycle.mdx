@@ -1,0 +1,29 @@
+---
+title: useCycle
+description: The useCycle hook
+---
+
+This hook allows you to iterate all the elements of a given array cyclically.
+
+## Params
+
+```typescript
+{
+    array: T[],
+    delay?: number // By default 500
+}
+```
+
+## Usage
+
+The `useCycle` hook returns the corresponding element of the array of the cycle:
+
+```tsx "useCycle"
+import { useCycle } from '@tecnosamba21/sam-hooks'
+
+export function Cycle() {
+    const cycle = useCycle<string>(['🗂️', '🪟', '👋', '📦'], 500)
+
+    return <h1>{cycle}</h1>
+}
+```

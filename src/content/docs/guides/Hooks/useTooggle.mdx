@@ -1,0 +1,30 @@
+---
+title: useTooggle
+description: The useTooggle hook
+---
+
+This hook allows you to use a boolean value and tooggle it from `true` to `false` easily.
+
+# Params
+
+```typescript
+{
+    initialValue: boolean
+}
+```
+
+# Usage
+
+```tsx "useToggle"
+import { useToggle } from '@tecnosamba21/sam-hooks'
+
+export default function ToggleButton() {
+  const value: boolean = useToggle()
+
+  return (
+    <button onClick={value.toggle}>
+      {value.getValue() ? 'Disable' : 'Enable'}
+    </button>
+  )
+}
+```

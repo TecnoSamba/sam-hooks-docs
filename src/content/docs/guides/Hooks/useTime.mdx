@@ -1,0 +1,28 @@
+---
+title: useTime
+description: The useTime hook
+---
+
+This `hook` allows you to get a `Date` object in real time that updates itself with a given interval.
+
+## Params
+
+```typescript
+{
+    interval?: number // By default 1000
+}
+```
+
+## Usage
+
+The `useTime` hook returns a self updated `Date` object that can be used in your components:
+
+```tsx "useTime"
+import { useTime } from '@tecnosamba21/sam-hooks';
+
+export function Time() {
+    const time: Date = useTime(500)
+
+    return <h1>{time.getTime()}</h1>
+}
+```

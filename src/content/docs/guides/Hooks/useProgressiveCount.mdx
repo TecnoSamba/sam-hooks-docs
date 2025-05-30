@@ -1,0 +1,33 @@
+---
+title: useProgressiveCount
+description: The useProgressiveCount hook
+---
+
+This hook allows you to set a progressive count from and to a value.
+
+## Params
+
+```typescript
+{
+    value: number,
+    options?: {
+        inicialValue: number, // By default 0
+        interval: number, // By default 0
+        incrementalValue: number // By default 1
+    }
+}
+```
+
+## Usage
+
+The `useProgressiveCount` hook returns the correspondig number number of the count:
+
+```tsx "useProgressiveCount"
+import { useProgressiveCount } from '@tecnosamba21/sam-hooks'
+
+export function ProgressiveCount() {
+    const count: number = useProgressiveCount(10)
+
+    return <h1>{count}</h1>
+}
+```

@@ -1,0 +1,33 @@
+---
+title: useId
+description: The useId hook
+---
+
+This hook allows you to create an unique identificator and to change its value by calling the `generate` function.
+
+## Params
+
+```typescript
+{
+    identifier: string // By default ''
+}
+```
+
+## Usage
+
+The hook returns a `Symbol` value for using it as a unique and unrepitable identifier:
+
+```tsx
+import { useId } from '@tecnosamba21/sam-hooks'
+
+export default function InputWithLabel() {
+  const id = useId('email')
+
+  return (
+    <div>
+      <label htmlFor={id}>Email</label>
+      <input id={id} type="email" />
+    </div>
+  )
+}
+```
