@@ -10,7 +10,7 @@ import react from '@astrojs/react';
 export default defineConfig({
     integrations: [starlight({
         title: 'SamHooks - Docs',
-        social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/tecnosamba21/sam-hooks' }, { icon: 'npm', label: 'npm', href: 'https://www.npmjs.com/package/@tecnosamba21/sam-hooks' }],
+        social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/tecnosamba/sam-hooks' }, { icon: 'npm', label: 'npm', href: 'https://www.npmjs.com/package/@tecnosamba/sam-hooks' }],
         sidebar: [
             {
                 label: 'SamHooks',
